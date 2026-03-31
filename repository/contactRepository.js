@@ -3,9 +3,7 @@ const Sequelize = require('sequelize')
 
 const create = async (contact) => 
 {      
-  const person = await Contact.create(contact);
-  
-  console.log('Usuario creado:', person);     
+  const person = await Contact.create(contact);       
 }
 
 module.exports={ create}

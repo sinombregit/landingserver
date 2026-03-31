@@ -2,9 +2,7 @@ const {Router} =require('express')
 const {check} =require('express-validator')
 const { createContact} =require('../controllers/contactService')
 const {validator} =require('../middleware/validator')
-
 const router=Router()
-
 
 router.post('/',
     [
@@ -16,5 +14,7 @@ router.post('/',
         validator 
     ]
     , createContact)
+
+    
 
 module.exports=router
